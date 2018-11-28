@@ -1,1 +1,39 @@
 <h3> ¡El registro fue almacenado con éxito! </h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Código</th>
+      <th scope="col">Detalle</th>
+      <th scope="col">Categoría</th>
+      <th scope="col">Valor</th>
+      <th scope="col">Descuento(%)</th>
+      <th scope="col">IVA(%)</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <th>
+        <%= @sale.cod %>
+      </th>
+      <th>
+        <%= @sale.detail %>
+      </th>
+      <th>
+        <%= @sale.category %>
+      </th>
+      <th>
+        <%= @sale.value %>
+      </th>
+       <th>
+        <%= @sale.discount %>
+      </th>
+      <th>
+        <%= @sale.tax %>
+      </th>
+      <th>
+        <%= @sale.total %>
+      </th>
+    </tr>
+  </tbody>
+  </table>
