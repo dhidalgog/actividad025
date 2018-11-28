@@ -1,0 +1,27 @@
+<%= form_with model: @sale, local: true do |f| %>
+    <div class="form-group">
+      <%= f.label :cod, "Código de la venta" %>
+      <%= f.number_field :cod, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :detail, "Detalle de la venta" %>
+      <%= f.text_area :detail, class: "form-control" %> 
+    </div>
+    <div class="form-group">
+      <%= f.label :category, "Categoría de la venta" %>
+      <%= f.text_field :category, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :value, "Valor de la venta" %>
+      <%= f.number_field :value, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :discount, "Descuento en porcentaje" %>
+      <%= f.number_field :discount, class: "form-control" %>
+    </div>
+    <div class="form-group form-check">
+      <%= f.check_box :tax, class: "form-check-input" %>
+      <%= f.label :tax, "Excento de IVA", class: "form-check-label" %>
+    </div>
+    <%= f.submit "Enviar", class: "btn btn-primary" %>
+<% end %>
